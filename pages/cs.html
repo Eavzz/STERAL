@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>CS2 – Page Personnelle</title>
+    <link rel="stylesheet" href="../assets/css/cs.css">
+</head>
+<body>
+
+    <!-- Bouton retour -->
+    <a href="../index.html" class="cs-back">← Retour</a>
+
+    <!-- Fond vidéo -->
+    <video autoplay muted loop id="bg-video">
+        <source src="../assets/video/cs.mp4" type="video/mp4">
+    </video>
+
+    <div class="page-container">
+
+        <h1 class="title">Counter-Strike 2 – Hub Personnel</h1>
+
+        <!-- Onglets -->
+        <div class="cs-tabs">
+            <button class="cs-tab active" data-tab="config">Config</button>
+            <button class="cs-tab" data-tab="rank">Rank</button>
+            <button class="cs-tab" data-tab="weapons">Weapons & Skins</button>
+            <button class="cs-tab" data-tab="guides">Ressources & Guides</button>
+        </div>
+
+        <!-- ==================== PANEL CONFIG ==================== -->
+        <div class="cs-panel active" id="cs-config">
+            <h2>CONFIG</h2>
+
+            <div class="section">
+                <h3>Crosshair</h3>
+                <pre>PLACEHOLDER_CODE_CROSSHAIR</pre>
+                <div class="placeholder-img">Prévisualisation Crosshair</div>
+            </div>
+
+            <div class="section">
+                <h3>Vidéo / Graphismes</h3>
+                <p>Résolution : <b>PLACEHOLDER_RESOLUTION</b></p>
+                <p>Ratio : <b>PLACEHOLDER_RATIO</b></p>
+                <p>Qualité : <b>PLACEHOLDER_QUALITY</b></p>
+            </div>
+
+            <div class="section">
+                <h3>Audio</h3>
+                <p>HRTF : <b>ON/OFF</b></p>
+                <p>Volume général : <b>PLACEHOLDER%</b></p>
+            </div>
+
+            <div class="section">
+                <h3>Binds</h3>
+<pre>
+bind "key" "PLACEHOLDER_ACTION"
+bind "key" "PLACEHOLDER_ACTION"
+bind "key" "+jump; -jump"
+</pre>
+            </div>
+
+            <div class="section">
+                <h3>Setup PC</h3>
+                <ul>
+                    <li>CPU : <b>PLACEHOLDER_CPU</b></li>
+                    <li>GPU : <b>PLACEHOLDER_GPU</b></li>
+                    <li>RAM : <b>PLACEHOLDER_RAM</b></li>
+                    <li>Écran : <b>PLACEHOLDER_MONITOR — PLACEHOLDER_HZ Hz</b></li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>Périphériques</h3>
+                <ul>
+                    <li>Souris : <b>PLACEHOLDER_MOUSE</b></li>
+                    <li>Clavier : <b>PLACEHOLDER_KEYBOARD</b></li>
+                    <li>Casque : <b>PLACEHOLDER_HEADSET</b></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ==================== PANEL RANK ==================== -->
+        <div class="cs-panel" id="cs-rank">
+            <h2>RANK</h2>
+
+            <div class="section">
+                <h3>Rank actuel</h3>
+                <div class="placeholder-img small">Rank Image Placeholder</div>
+                <p><b>PLACEHOLDER_RANK_NAME</b></p>
+            </div>
+
+            <div class="section">
+                <h3>Historique des ranks</h3>
+                <table>
+                    <tr><th>Saison</th><th>Rang</th><th>Notes</th></tr>
+                    <tr><td>S1</td><td>PLACEHOLDER</td><td>Texte</td></tr>
+                    <tr><td>S2</td><td>PLACEHOLDER</td><td>Texte</td></tr>
+                </table>
+            </div>
+
+            <div class="section">
+                <h3>Stats globales</h3>
+                <ul>
+                    <li>Heures : <b>PLACEHOLDER_HOURS</b></li>
+                    <li>Winrate : <b>PLACEHOLDER_WINRATE%</b></li>
+                    <li>KD : <b>PLACEHOLDER_KD</b></li>
+                    <li>ADR : <b>PLACEHOLDER_ADR</b></li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>Maps préférées</h3>
+                <p>1. PLACEHOLDER_MAP</p>
+                <p>2. PLACEHOLDER_MAP</p>
+                <p>3. PLACEHOLDER_MAP</p>
+            </div>
+        </div>
+
+        <!-- ==================== PANEL WEAPONS ==================== -->
+        <div class="cs-panel" id="cs-weapons">
+            <h2>WEAPONS & SKINS</h2>
+
+            <div class="section">
+                <h3>Armes préférées</h3>
+
+                <div class="weapon-card">
+                    <div class="placeholder-img small"></div>
+                    <p><b>PLACEHOLDER_WEAPON</b></p>
+                    <p>Style : PLACEHOLDER_STYLE</p>
+                </div>
+
+                <div class="weapon-card">
+                    <div class="placeholder-img small"></div>
+                    <p><b>PLACEHOLDER_WEAPON</b></p>
+                    <p>Style : PLACEHOLDER_STYLE</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>Skins possédés</h3>
+                <div class="inventory-grid">
+                    <div class="skin-item">
+                        <div class="placeholder-img small"></div>
+                        <p>Nom : PLACEHOLDER</p>
+                        <p>Qualité : FN/MW/FT</p>
+                        <p>Valeur : PLACEHOLDER €</p>
+                    </div>
+
+                    <div class="skin-item">
+                        <div class="placeholder-img small"></div>
+                        <p>Nom : PLACEHOLDER</p>
+                        <p>Qualité : FN/MW/FT</p>
+                        <p>Valeur : PLACEHOLDER €</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>Skins de rêve</h3>
+                <p>• AWP PLACEHOLDER</p>
+                <p>• AK PLACEHOLDER</p>
+                <p>• USP PLACEHOLDER</p>
+            </div>
+        </div>
+
+        <!-- ==================== PANEL GUIDES ==================== -->
+        <div class="cs-panel" id="cs-guides">
+            <h2>RESSOURCES & GUIDES</h2>
+
+            <div class="section">
+                <h3>Smokes</h3>
+                <div class="placeholder-img medium"></div>
+                <p>PLACEHOLDER_DESCRIPTION_SMOKE</p>
+            </div>
+
+            <div class="section">
+                <h3>Setups</h3>
+                <p>CT Setup : PLACEHOLDER</p>
+                <p>T Setup : PLACEHOLDER</p>
+            </div>
+
+            <div class="section">
+                <h3>Commandes utiles</h3>
+<pre>
+PLACEHOLDER_COMMAND_1
+PLACEHOLDER_COMMAND_2
+PLACEHOLDER_COMMAND_3
+</pre>
+            </div>
+
+            <div class="section">
+                <h3>Ressources externes</h3>
+                <ul>
+                    <li>crosshairgenerator.com</li>
+                    <li>csgonades.com</li>
+                    <li>scope.gg</li>
+                    <li>Liquipedia CS2</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+<!-- ========= JS : Onglets avec transition smooth ========== -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const tabs = document.querySelectorAll(".cs-tab");
+    const panels = document.querySelectorAll(".cs-panel");
+
+    tabs.forEach(tab => {
+        tab.addEventListener("click", () => {
+
+            const id = tab.dataset.tab;
+            const target = document.getElementById("cs-" + id);
+
+            // reset onglets
+            tabs.forEach(t => t.classList.remove("active"));
+            tab.classList.add("active");
+
+            // fade out panels
+            panels.forEach(p => p.classList.remove("active"));
+
+            // active target
+            setTimeout(() => {
+                target.classList.add("active");
+            }, 30);
+        });
+    });
+});
+</script>
+
+<script>
+// Effet tilt 3D sur les skins
+document.querySelectorAll(".skin-item").forEach(card => {
+    card.addEventListener("mousemove", e => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left - rect.width / 2;
+        const y = e.clientY - rect.top - rect.height / 2;
+
+        card.style.transform = `rotateY(${x / 20}deg) rotateX(${-y / 20}deg) scale(1.03)`;
+    });
+
+    card.addEventListener("mouseleave", () => {
+        card.style.transform = "rotateY(0deg) rotateX(0deg) scale(1)";
+    });
+});
+</script>
+
+</body>
+</html>

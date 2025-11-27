@@ -43,12 +43,18 @@ body {
 }
 
 .arcane-back {
-  position: absolute; top: 20px; left: 30px;
+  position: absolute;
+  top: 20px; left: 30px;
   font-weight: 700;
-  color: var(--arcane-cyan);
+  font-size: 17px;
+  color: #6fd2ff;
   text-decoration: none;
+  transition: 0.25s ease;
 }
-.arcane-back:hover { color: white; }
+.arcane-back:hover { 
+  color: white; 
+  transform: translateY(-2px);
+}
 
 .arcane-title {
   font-family: 'Bebas Neue', sans-serif;
