@@ -83,7 +83,7 @@ body {
 /* =========== PANELS (avec transition smooth) =========== */
 
 .cs-panel {
-    display: none;                 /* ← très important */
+    display: none;         
     margin: 20px auto;
     padding: 50px;
     width: 95%;
@@ -97,7 +97,7 @@ body {
 }
 
 .cs-panel.active {
-    display: block;                /* ← seul le panel actif prend la place */
+    display: block;
     animation: csFadeIn 0.35s ease forwards;
 }
 
