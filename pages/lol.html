@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>League of Legends – Arcane ARURF</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/arcane.css">
+
+</head>
+
+<body class="arcane-theme">
+
+<!-- Background vidéo -->
+<video autoplay muted loop playsinline id="arcane-bg">
+    <source src="../assets/video/lol.mp4" type="video/mp4">
+</video>
+
+<div class="arcane-overlay"></div>
+
+<header class="arcane-header">
+    <a href="../index.html" class="arcane-back">← Retour</a>
+    <h1 class="arcane-title">LEAGUE OF LEGENDS – ARURF ARCANE</h1>
+</header>
+
+<main class="arcane-container">
+
+    <!-- Onglets -->
+    <div class="arcane-tabs">
+        <button class="arcane-tab active" data-tab="regles">Règles</button>
+        <button class="arcane-tab" data-tab="calculateur">Calculateur</button>
+    </div>
+
+<section id="regles" class="arcane-box active">
+    <h2 class="regles-title">RÈGLES - URF BABANKS</h2>
+
+    <div class="regles-grid">
+
+        <div class="regle-card">
+            <div class="regle-icon">🔥</div>
+            <h3 class="regle-head">Objectif</h3>
+            <p>Le but du jeu est d’avoir le plus de dégâts infligés uniquement sur les champions.</p>
+        </div>
+
+        <div class="regle-card">
+            <div class="regle-icon">💎</div>
+            <h3 class="regle-head">Gagnant & Perdant</h3>
+            <p>
+                Le joueur avec le moins de dégâts paie un skin ou équivalent IRL / autre jeu
+                au joueur qui a le plus de dégâts.  
+                Possibilité d'utiliser une ardoise pour cumuler les dettes.
+            </p>
+        </div>
+
+        <div class="regle-card">
+            <div class="regle-icon">🎮</div>
+            <h3 class="regle-head">Nombre de parties</h3>
+            <p>Une session doit comporter un minimum de trois parties.</p>
+        </div>
+
+        <div class="regle-card">
+            <div class="regle-icon">⚠️</div>
+            <h3 class="regle-head">Participation obligatoire</h3>
+            <p>
+                Tous les joueurs doivent jouer toutes les games.  
+                Si un joueur quitte, il est automatiquement perdant.  
+                Les autres continuent la session normalement.
+            </p>
+        </div>
+
+        <div class="regle-card">
+            <div class="regle-icon">📢</div>
+            <h3 class="regle-head">Annonce préalable</h3>
+            <p>Le nombre de parties doit être annoncé avant de commencer.</p>
+        </div>
+
+        <div class="regle-card">
+            <div class="regle-icon">🧨</div>
+            <h3 class="regle-head">AFK Rules</h3>
+            <p>
+                Si un ennemi est AFK : la partie ne compte pas.  
+                Si un allié est AFK : la partie compte.
+            </p>
+        </div>
+
+        <div class="regle-card">
+            <div class="regle-icon">💀</div>
+            <h3 class="regle-head">Pénalité de défaite</h3>
+            <p>
+                En cas de défaite, le joueur avec le moins de kills reçoit un malus de -5000 dégâts.
+            </p>
+        </div>
+
+        <div class="regle-card">
+            <div class="regle-icon">🔁</div>
+            <h3 class="regle-head">Champions interdits</h3>
+            <p>Il est interdit de jouer 2 fois le même champion pendant une session.</p>
+        </div>
+
+        <div class="regle-card">
+            <div class="regle-icon">🤝</div>
+            <h3 class="regle-head">Alliances</h3>
+            <p>Les alliances entre joueurs sont autorisées.</p>
+        </div>
+
+        <div class="regle-card">
+            <div class="regle-icon">🧠</div>
+            <h3 class="regle-head">Interdiction "Je savais pas"</h3>
+            <p>
+                Dire « je savais pas... » à propos du babanks entraîne un malus de -10000 dégâts.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+    <!-- Page Calculateur -->
+    <section id="calculateur" class="arcane-box">
+
+        <h2>CALCULATEUR ARURF</h2>
+
+        <button id="addPlayer" class="arc-btn">+ Ajouter un joueur</button>
+        <button id="addGame" class="arc-btn violet">+ Ajouter une partie</button>
+
+        <div id="games"></div>
+
+        <section id="results" class="results-box">
+            <h2>Résultats</h2>
+            <div id="ranking"></div>
+        </section>
+
+    </section>
+</main>
+
+<script src="../assets/js/tabs.js"></script>
+<script src="../assets/js/calculator.js"></script>
+
+</body>
+</html>

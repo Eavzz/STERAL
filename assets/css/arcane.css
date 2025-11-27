@@ -1,0 +1,356 @@
+/* ======================================
+   ARCANE HEAVY THEME – GLOW / NEON / RIOT UI
+   ====================================== */
+
+:root {
+  --arcane-purple: #8a2be2;
+  --arcane-cyan: #7ad7ff;
+  --arcane-red: #ff7a9b;
+  --arcane-dark: rgba(10, 6, 30, 0.70);
+  --glass: rgba(25, 10, 50, 0.55);
+}
+
+/* Background vidéo */
+#arcane-bg {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  z-index: -2;
+  filter: brightness(0.6);
+}
+
+.arcane-overlay {
+  position: fixed;
+  width: 100%; height: 100%;
+  top: 0; left: 0;
+  background: radial-gradient(circle at center, rgba(40, 0, 90, 0.25), rgba(0,0,0,0.7));
+  backdrop-filter: blur(4px);
+  z-index: -1;
+}
+
+/* Global */
+body {
+  margin: 0;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Header */
+.arcane-header { 
+  text-align: center; 
+  margin-top: 30px; 
+}
+
+.arcane-back {
+  position: absolute; top: 20px; left: 30px;
+  font-weight: 700;
+  color: var(--arcane-cyan);
+  text-decoration: none;
+}
+.arcane-back:hover { color: white; }
+
+.arcane-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 50px;
+  letter-spacing: 3px;
+  text-shadow: 0 0 20px var(--arcane-purple);
+}
+
+/* Container */
+.arcane-container {
+  width: 90%;
+  margin: 40px auto;
+}
+
+/* Tabs */
+.arcane-tabs {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.arcane-tab {
+  padding: 10px 25px;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+  transition: .25s;
+}
+
+.arcane-tab.active {
+  background: linear-gradient(135deg, var(--arcane-purple), var(--arcane-cyan));
+  box-shadow: 0 0 20px var(--arcane-cyan);
+  transform: translateY(-2px);
+}
+
+/* Box */
+.arcane-box {
+  padding: 30px;
+  border-radius: 18px;
+  background: var(--glass);
+  border: 1px solid rgba(255,255,255,0.2);
+  box-shadow: 0 0 25px rgba(150,50,255,0.35);
+  display: none;
+  animation: fadeIn .4s ease;
+}
+
+.arcane-box.active { display: block; }
+
+/* Fade */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0px); }
+}
+
+/* Buttons */
+.arc-btn {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  background: var(--arcane-purple);
+  color: white;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.arc-btn.violet { background: var(--arcane-cyan); color: black; }
+
+/* =====================================
+   TABLEAU ARCANE HEAVY – COMPLET
+   ===================================== */
+
+.arcane-game {
+  padding: 25px;
+  margin-top: 35px;
+  border-radius: 18px;
+  background: rgba(20, 10, 40, 0.72);
+  border: 1px solid rgba(160,80,255,.35);
+  box-shadow: 0 0 22px rgba(140,70,255,0.4);
+}
+
+/* Titre de partie */
+.part-title {
+  font-family: 'Bebas Neue';
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #c97dff;
+  text-shadow: 0 0 10px #8a2be2;
+}
+
+/* Header du tableau */
+.table-header {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 0.7fr 0.7fr 0.8fr;
+  padding: 12px 5px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #eee;
+  text-align: left;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+/* Lignes des joueurs */
+.arcane-row {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 0.7fr 0.7fr 0.8fr;
+  padding: 10px 5px;
+  align-items: center;
+  text-align: left;          /* ALIGNEMENT PARFAIT A GAUCHE */
+  gap: 5px;
+}
+
+/* Applique l'alignement à tous les éléments de la ligne */
+.arcane-row > * {
+  justify-self: start !important;
+}
+
+/* Alignement du nom du joueur */
+.player-name {
+  font-weight: 600;
+  font-size: 16px;
+  text-align: left !important;
+  padding-left: 10px !important;
+}
+
+/* Inputs */
+.arcane-input {
+  width: 85%;
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid rgba(180,180,255,0.25);
+  background: rgba(255,255,255,0.07);
+  color: white;
+  transition: .25s;
+}
+
+.arcane-input:focus {
+  border-color: var(--arcane-purple);
+  box-shadow: 0 0 10px var(--arcane-purple);
+}
+
+/* Checkboxes */
+.arcane-check {
+  width: 18px; height: 18px;
+  appearance: none;
+  border: 2px solid #d8b4ff;
+  border-radius: 4px;
+  background: rgba(255,255,255,0.1);
+  cursor: pointer;
+  transition: .2s;
+}
+
+.arcane-check:checked {
+  background: var(--arcane-purple);
+  box-shadow: 0 0 12px #c77dff;
+}
+
+/* Badges TOTAL */
+.total-badge {
+  padding: 6px 14px;
+  border-radius: 10px;
+  min-width: 70px;
+  font-size: 15px;
+  font-weight: 600;
+  border: 1px solid rgba(255,255,255,0.15);
+  background: rgba(255,255,255,0.05);
+  transition: .2s;
+  text-align: left !important;
+  justify-self: start !important;
+}
+
+/* Couleurs */
+.total-pos {
+  color: #7ad7ff;
+  border-color: rgba(122,215,255,0.4);
+  box-shadow: 0 0 10px rgba(122,215,255,0.25);
+}
+
+.total-neg {
+  color: #ff7a9b;
+  border-color: rgba(255,122,155,0.4);
+  box-shadow: 0 0 10px rgba(255,122,155,0.25);
+}
+
+.total-zero {
+  color: #d8cfff;
+  opacity: .85;
+}
+
+/* Animation badge */
+.badge-anim {
+  transform: scale(1.13);
+  box-shadow: 0 0 15px rgba(200,120,255,0.6);
+}
+
+/* Highlight lignes */
+.arcane-row.row-malus {
+  background: radial-gradient(circle at center, rgba(255,122,155,0.20), transparent 65%);
+}
+
+.arcane-row.row-clean {
+  background: radial-gradient(circle at center, rgba(122,215,255,0.16), transparent 65%);
+}
+
+/* Résultats */
+.results-box {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 14px;
+  background: rgba(20,10,40,0.82);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* Vainqueur / Perdant */
+.winner {
+  color: #7ad7ff;
+  font-size: 22px;
+  font-weight: 600;
+  text-shadow: 0 0 12px #7ad7ff;
+}
+
+.loser {
+  color: #ff7a9b;
+  font-size: 22px;
+  font-weight: 600;
+  text-shadow: 0 0 10px #ff7a9b;
+}
+
+/* Icônes header */
+.arcane-icon {
+  width: 22px;
+  height: 22px;
+  margin-right: 6px;
+  vertical-align: middle;
+  filter: drop-shadow(0 0 6px rgba(255,255,255,0.7));
+}
+
+/* ============================
+   RÈGLES – MODE CARTES ARCANE
+   ============================ */
+
+.regles-title {
+    font-family: 'Bebas Neue';
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #d9a5ff;
+    text-shadow: 0 0 12px #a458ff;
+}
+
+.regles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 10px;
+}
+
+.regle-card {
+    background: rgba(25, 10, 55, 0.55);
+    border: 1px solid rgba(180, 120, 255, 0.25);
+    border-radius: 18px;
+    padding: 22px;
+    box-shadow: 0 0 18px rgba(150, 70, 255, 0.35);
+    backdrop-filter: blur(6px);
+    transition: 0.25s ease;
+    animation: reglePop .4s ease forwards;
+}
+
+.regle-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 0 22px rgba(120, 230, 255, 0.45);
+    border-color: rgba(120, 230, 255, 0.5);
+}
+
+/* Icônes */
+.regle-icon {
+    font-size: 32px;
+    margin-bottom: 8px;
+    text-shadow: 0 0 10px rgba(255,255,255,0.4);
+}
+
+/* Titres */
+.regle-head {
+    font-size: 22px;
+    font-weight: 700;
+    color: #e3c2ff;
+    text-shadow: 0 0 10px #b678ff;
+    margin-bottom: 10px;
+}
+
+/* Texte */
+.regle-card p {
+    font-size: 15px;
+    line-height: 1.45;
+    color: #f6eaff;
+    opacity: .9;
+}
+
+/* Animation */
+@keyframes reglePop {
+    from { opacity: 0; transform: scale(0.9); }
+    to   { opacity: 1; transform: scale(1); }
+}
